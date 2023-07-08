@@ -19,6 +19,13 @@ class GameViewController: UIViewController {
             scene.scaleMode = .aspectFill
 
             view.presentScene(scene)
+
+            // Otimizar o desenho na cena.
+            view.ignoresSiblingOrder = true
+
+            // Ignorar (apenas para mostrar elementos de FPS e quantidade de nós na cena).
+            view.showsFPS = true
+            view.showsNodeCount = true
         }
     }
 
