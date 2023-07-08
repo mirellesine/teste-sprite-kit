@@ -20,12 +20,12 @@ class GameViewController: UIViewController {
 
             view.presentScene(scene)
 
-            // Otimizar o desenho na cena
-            view.ignoresSiblingOrder = true
+            // Otimizar o desenho na cena.
+            view.ignoresSiblingOrder = false
 
-            // Ignorar (apenas para mostrar elementos de FPS e quantidade de nós na cena)
-            view.showsFPS = true
-            view.showsNodeCount = true
+            // Ignorar (apenas para mostrar elementos de FPS e quantidade de nós na cena).
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
     }
 
