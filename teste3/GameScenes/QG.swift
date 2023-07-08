@@ -1,5 +1,5 @@
 //
-//  GameScene.swift
+//  QG.swift
 //  teste3
 //
 //  Created by Mirelle Sine on 06/07/23.
@@ -12,7 +12,7 @@ struct MascaraBit {
     static let Laser: UInt32 = 2
 }
 
-class GameScene: SKScene {
+class QG: SKScene {
     
     var circle = SKShapeNode()
     var laser = SKNode()
@@ -59,7 +59,7 @@ class GameScene: SKScene {
 //    }
 }
 
-extension GameScene: SKPhysicsContactDelegate {
+extension QG: SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
         if contact.bodyA.node?.name == "Laser" || contact.bodyB.node?.name == "Laser"{
             print("Teve contato aqui!")
